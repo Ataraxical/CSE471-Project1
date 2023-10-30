@@ -10,16 +10,16 @@
     <h1>Effects Component</h1>
     <div>
         <h2>Component Passes Audio</h2>
-        <p>The Piano keeps track of which frame of input data it is currently working with. This frame is passed to the Effects Component. It also keeps track of the input audio sample frames, which are used to create delays for effects.</p>
+        <p>The Piano keeps track of which sample frame it is currently working with. This frame is passed to the Effects Component. It can also determine all input audio sample frames for the note it is playing, which are used to create delays for effects.</p>
         <h2>Noise Gate</h2>
-        <p>The noise gate is implemented using a threshold and reduction factor. If the amplitude is greater than the threshold, the amplitude of the sample will be scaled using a factor of (amplitude/threshold) * (reduction factor) so that a frequency close to the threshold will not be effected greatly.</p>
+        <p>The noise gate is implemented using a threshold and reduction factor. If the amplitude of the sample frame is greater than the threshold, the amplitude of the sample frame will be scaled using a factor of (amplitude/threshold) * (reduction factor) so that a sample frame close to the threshold will not be affected greatly.</p>
         <h2>Chorus</h2>
-        <p>The chorus is implemented using a series of modulated and delayed samples mixed back into the output sample. The effect defines a depth (amplitude) and frequency for a low-frequency oscillator. This oscillator is used to modulate each delayed frame in order to slightly detune and distinguish the delayed sample. These are then mixed back into the input sample with some interpolation done on input and delayed samples to prevent clipping.</p>
+        <p>The chorus is implemented using a series of modulated and delayed sample frames mixed back into the output sample frame. The effect defines a depth (amplitude) and frequency for a low-frequency oscillator (~2 Hz in this case). This oscillator is used to modulate each delayed frame in order to slightly detune and distinguish the delayed sample. These are then mixed back into the input sample with some interpolation done on input and delayed sample frames to prevent clipping.</p>
         <h2>Reverb</h2>
-        <p>The reverb effect is implemented as a series of delays. The effect is similar to the chorus effect except that each sample is mixed at varying amplitudes (in the chorus effect, each sample is mixed at an equal amplitude) and they are not modulated. There was one main barrier to implementing a traditional reverb stemming from the fact that the design of the Synthie program does not allow for instruments to access previous output frames. A typical reverb would implement some kind of feedback, meaning that the alterations created in one sample will effect the output of future samples. This means we are restricted to only using the input audio and knowledge of previous input samples to create a reverb effect, essentially limiting it to being a layered delay effect.</p>
+        <p>The reverb effect is implemented as a series of delays. The effect is similar to the chorus effect except that each delayed sample frame is mixed at varying amplitudes (in the chorus effect, each sample frame is mixed at an equal amplitude) and the sample frames are not frequency-modulated. There was one main barrier to implementing a traditional reverb stemming from the fact that the design of the Synthie program does not allow for instruments to access previous output frames. A typical reverb would implement some kind of feedback, meaning that the alterations created in one sample will affect the output of future samples. This means we are restricted to only using the input audio and knowledge of previous input samples to create a reverb effect, essentially limiting it to being a layered delay effect.</p>
     </div>
     <div class="in-and-out">
-        <h2>Effects Sample</h2>
+        <h2>Effects Demonstration</h2>
         <audio controls src="./resources/Demo.wav"></audio>
         <object class="score" data="./resources/Demo.txt"></object>
     </div>

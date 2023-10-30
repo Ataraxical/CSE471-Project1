@@ -12,14 +12,14 @@
         <h2>Plays piano notes</h2>
         <p>The piano component was implemented using a library of samples from the course website. When the program is started each of these sample is loaded into a WaveData object. When the Synthesizer object is instantiated, an AudioLibrary object is instantiated to store all of the WaveData objects. When a note is to be played, the Piano object is instatiated and passed a pointer to the AudioLibrary. The Piano object can then access the appropriate WaveData.</p>
         <h2>Envelope Generation</h2>
-        <p>When notes are played or determined to be ending an attack window and release window are applied to linearly ramp the audio in or out.</p>
+        <p>When notes are determined to be beginning or ending an attack window or release window is applied to linearly ramp the audio in or out.</p>
         <h2>Pedal Simulation</h2>
-        <p>The pedal simulation is implemented through two mechanisms: altering the sample duration and altering the length of the sample's envelope tails. When the pedal is depressed, the note duration is increased and the envelope tails are not scaled. When the pedal is released, the note has an maximum duration applied to it and the envelope tails are scaled down.</p>
+        <p>The pedal simulation is implemented through two mechanisms: altering the sample duration and altering the length of the sample's envelope tails. When the pedal is depressed, the note duration is increased and the envelope tails are not scaled. When the pedal is released, the note has a maximum duration applied to it and the envelope tails are scaled down.</p>
         <h2>Dynamics</h2>
         <p>The library used has a loud and soft variant. The score file indicates a velocity "l" for loud or "s" for soft to indicate the expression the Synthesizer should use for that note.</p>
     </div>
     <div class="in-and-out">
-        <h2>Effects Sample</h2>
+        <h2>Piano Demonstration</h2>
         <audio controls src="./resources/Demo_piano.wav"></audio>
         <object class="score" data="./resources/Demo_piano.txt"></object>
     </div>
