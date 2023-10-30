@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<score bpm="120" beatspermeasure="4">
+     <instrument instrument="piano" reverb="f" chorus="f">
+
+	  <note measure="1" beat="1" duration="2" note="C4" pedal="t" velocity="s"/>
+	  <note measure="1" beat="1" duration="2" note="G4" pedal="t" velocity="s"/>
+	  <note measure="1" beat="1" duration="2" note="D5" pedal="t" velocity="s"/>
+
+
+          <note measure="1" beat="3" duration="2" note="A3#" pedal="t" velocity="s"/>
+	  <note measure="1" beat="3" duration="2" note="G4" pedal="t" velocity="s"/>
+	  <note measure="1" beat="3" duration="2" note="D5" pedal="t" velocity="s"/>
+
+
+	  <note measure="3" beat="1" duration="2" note="C4" pedal="t" velocity="s"/>
+	  <note measure="3" beat="1" duration="2" note="G4" pedal="t" velocity="s"/>
+	  <note measure="3" beat="1" duration="2" note="D5" pedal="t" velocity="s"/>
+
+
+          <note measure="3" beat="3" duration="2" note="A3#" pedal="t" velocity="s"/>
+	  <note measure="3" beat="3" duration="2" note="G4" pedal="t" velocity="s"/>
+	  <note measure="3" beat="3" duration="2" note="D5" pedal="t" velocity="s"/>
+     </instrument>
+
+     <instrument instrument="piano" chorus="t">
+	  <note measure="2" beat="1" duration="2" note="C4" pedal="t" velocity="s"/>
+	  <note measure="2" beat="1" duration="2" note="G4" pedal="t" velocity="s"/>
+	  <note measure="2" beat="1" duration="2" note="D5" pedal="t" velocity="s"/>
+
+
+          <note measure="2" beat="3" duration="2" note="A3#" pedal="t" velocity="s"/>
+	  <note measure="2" beat="3" duration="2" note="G4" pedal="t" velocity="s"/>
+	  <note measure="2" beat="3" duration="2" note="D5" pedal="t" velocity="s"/>
+     </instrument>
+
+     <instrument instrument="piano" reverb="t">
+	  <note measure="4" beat="1" duration="2" note="C4" pedal="t" velocity="s"/>
+	  <note measure="4" beat="1" duration="2" note="G4" pedal="t" velocity="s"/>
+	  <note measure="4" beat="1" duration="2" note="D5" pedal="t" velocity="s"/>
+
+
+          <note measure="4" beat="3" duration="2" note="A3#" pedal="t" velocity="s"/>
+	  <note measure="4" beat="3" duration="2" note="G4" pedal="t" velocity="s"/>
+	  <note measure="4" beat="3" duration="2" note="D5" pedal="t" velocity="s"/>
+     </instrument>
+</score>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<score bpm="120" beatspermeasure="4">
+     <instrument instrument="piano" reverb="f" chorus="f">
+          <note measure="1" beat="1" duration="2" note="A4#" pedal="t" velocity="s"/>
+          <note measure="1" beat="3" duration="2" note="A4#" pedal="t" velocity="s"/>
+
+	  <note measure="2" beat="1" duration="2" note="A4#" pedal="t" velocity="l"/>
+          <note measure="2" beat="3" duration="2" note="A4#" pedal="t" velocity="l"/>
+
+	  <note measure="3" beat="1" duration="2" note="A4#" pedal="f" velocity="s"/>
+          <note measure="3" beat="3" duration="2" note="A4#" pedal="f" velocity="s"/>
+
+	  <note measure="4" beat="1" duration="2" note="A4#" pedal="t" velocity="s"/>
+          <note measure="4" beat="3" duration="2" note="A4#" pedal="t" velocity="s"/>
+
+	  <note measure="5" beat="1" duration="2" note="C3#" pedal="t" velocity="s"/>
+          <note measure="5" beat="3" duration="2" note="C3#" pedal="t" velocity="s"/>
+     </instrument>
+</score>
