@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="./index.css">
+<link rel="icon" type="image/x-icon" href="./resources/piano-svgrepo-com.svg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +20,26 @@
         <li><a href="piano.html">Piano</a></li>
         <li><a href="effects.html">Effects - Reverb, Chorus, Noise Gate</a></li>
     </ul>
+    </div>
+
+    <div class="score-details">
+        <h2>Score Format</h2>
+        <p>The score is formatted as an XML document with 3 types of nodes: Scores, Instruments, and Notes.
+        <br><br>The score has attributes indicating the beats per minute (bpm) of the score and the number of beats per measure (time signature numerator). The denominator is assumed to be 4 (i.e. a "beat" is a quarter note).
+        <br><br>
+        Instruments have attributes indicating the instrument type and if effects are enabled (t = enabled, f = disabled) for that instrument (i.e. gate="t").
+        
+           Notes have many attributes:
+           <ul>
+            <li>measure: the measure the note is to be played in.</li>
+            <li>beat: the beat within the measure that the note is to be played in. Can contain fractional numbers.</li>
+            <li>duration: the duration (in beats) that the note is to be played for.</li>
+            <li>note: the note value to indicate the frequency of the note. Uses sharps, not flats. Formatted as value + octave + sharp (i.e. E3 or E3#).</li>
+            <li>velocity: indicates the intonation with which the note is to be played (l for loud, s for soft).</li>
+            <li>pedal: indicates if the piano's sustain pedal was depressed for this note.</li>
+           </ul> 
+        
+        <i>Note: Instruments are children of scores and notes are children of instruments.</i></p>
     </div>
 
     <div class="in-and-out">
